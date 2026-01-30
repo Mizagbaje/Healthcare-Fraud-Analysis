@@ -5,23 +5,20 @@ This project analyzes healthcare claims data to identify patterns linked to pote
 
 # 📑 Table of Contents
 
-1. [Project Introduction](#Healthcare-Provider-Fraud-Detection)  
-2. [Import Required Libraries](#Import-Required-Libraries)  
-3. [Load the Datasets](#Load-the-Datasets)  
-4. [Explore the Data Structure](#SExplore-the-Data-Structure)  
-5. [Combine Claims Data](#Combine-Claims-Data)  
-6. [Add Patient Information](#Add-Patient-Information)  
-7. [Add Fraud Labels](#Add-Fraud-Labels)  
-8. [Feature Engineering](#Feature-Engineering)  
-9. [Handle Missing Values](#Handle-Missing-Values)  
-10. [Encode Target Variable](#Encode-Target-Variable)  
-11. [Train-Test Split](#Train-Test-Split)  
-12. [Model Training](#Model-Training)  
-13. [Model Evaluation](#Model-Evaluation)  
-14. [Feature Importance](#Feature-Importance)  
-15. [Advanced Fraud Detection Features](#Add-Advanced-Fraud-Detection-Features)  
-16. [Final Conclusion](#Final-Conclusion)  
-17. [Business Impact](#Business-Impact)
+
+
+1. [Project Overview](#project-overview)  
+2. [Dataset Description](#dataset-description)  
+3. [Tools & Technologies Used](#tools--technologies-used)  
+4. [Data Preparation](#data-preparation)  
+5. [Feature Engineering](#feature-engineering)  
+6. [Machine Learning Model](#machine-learning-model)  
+7. [Model Performance](#model-performance)  
+8. [Feature Importance](#feature-importance)  
+9. [Key Takeaways](#key-takeaways)  
+10. [Future Improvements](#future-improvements)  
+11. [How to Run This Project](#how-to-run-this-project)  
+12. [Author](#author)
 
 
 
@@ -29,7 +26,9 @@ This project analyzes healthcare claims data to identify patterns linked to pote
 
 
 
-### 📌 Project Overview
+
+
+### Project Overview
 
 Healthcare fraud is a major challenge that leads to billions of dollars in losses each year. In this project, we analyze healthcare claims data to identify patterns associated with potentially fraudulent healthcare providers and build a machine learning model to help detect fraud.
 
@@ -37,7 +36,7 @@ The goal is to use **data analytics and predictive modeling** to distinguish bet
 
 ---
 
-## 📂 Dataset Description
+### Dataset Description
 
 The dataset consists of multiple tables representing different aspects of healthcare claims:
 
@@ -52,7 +51,7 @@ Each claim is linked to a **beneficiary (patient)** and a **provider**, allowing
 
 ---
 
-### 🛠 Tools & Technologies Used
+### Tools & Technologies Used
 
 * **Python**
 * **Pandas** – Data cleaning and transformation
@@ -62,7 +61,7 @@ Each claim is linked to a **beneficiary (patient)** and a **provider**, allowing
 
 ---
 
-### 🔄 Data Preparation
+### Data Preparation
 
 The following preprocessing steps were performed:
 
@@ -78,7 +77,7 @@ The following preprocessing steps were performed:
 
 ---
 
-### 🧠 Feature Engineering
+### Feature Engineering
 
 To improve fraud detection, several provider-level features were created:
 
@@ -93,7 +92,7 @@ These features help capture unusual billing behavior and patient patterns that m
 
 ---
 
-### 🤖 Machine Learning Model
+### Machine Learning Model
 
 A **Random Forest Classifier** was trained to predict whether a provider is potentially fraudulent.
 
@@ -112,7 +111,7 @@ Class imbalance (fraud is rare) was addressed using **balanced class weights**.
 
 ---
 
-## 📊 Model Performance
+### Model Performance
 
 | Metric        | Non-Fraud (0) | Fraud (1) |
 | ------------- | ------------- | --------- |
@@ -128,7 +127,7 @@ Class imbalance (fraud is rare) was addressed using **balanced class weights**.
 
 ---
 
-## 📈 Feature Importance
+### Feature Importance
 
 Feature importance analysis showed that the most influential indicators of fraud include:
 
@@ -140,7 +139,7 @@ These suggest that unusual billing volume and patient patterns are key signals i
 
 ---
 
-## 🚀 Key Takeaways
+### Key Takeaways
 
 * Healthcare fraud detection requires **careful feature engineering**
 * **Provider-level aggregation** is critical for meaningful insights
@@ -149,7 +148,7 @@ These suggest that unusual billing volume and patient patterns are key signals i
 
 ---
 
-## 📌 Future Improvements
+### Future Improvements
 
 * Add more behavioral features (e.g., diagnosis diversity, procedure patterns)
 * Use advanced imbalance techniques like **SMOTE**
@@ -158,7 +157,7 @@ These suggest that unusual billing volume and patient patterns are key signals i
 
 ---
 
-## 📎 How to Run This Project
+### How to Run This Project
 
 1. Clone the repository
 2. Install required libraries:
@@ -171,7 +170,7 @@ These suggest that unusual billing volume and patient patterns are key signals i
 
 ---
 
-## 👩🏽‍💻 Author
+### Author
 
 **Oseni Monsurat Olabisi**
 Healthcare Data Analyst | Data Analytics & Machine Learning Enthusiast
